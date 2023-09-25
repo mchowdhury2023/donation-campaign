@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "category": "Health",
+        "image":"Health.png",
+        "title": "Clean water for Children",
+        "description": "Providing access to clean and safe drinking water for underprivileged children in various parts of the world.",
+        "amount": 1500
+    },
+    {
+        "id": 2,
+        "category": "Education",
+        "image": "Education.png",
+        "title": "Books for Rural Schools",
+        "description": "Empowering the future of our nation by providing books and educational materials to schools in rural areas.",
+        "amount": 1000
+    },
+    {
+        "id": 3,
+        "category": "Clothing",
+        "image": "Clothing.png",
+        "title": "Warm clothes for Winter",
+        "description": "Distributing warm clothing to the needy to protect them from the harsh cold of winter, ensuring they remain healthy and safe.",
+        "amount": 750
+    },
+    {
+        "id": 4,
+        "category": "Food",
+        "image": "Food.png",
+        "title": "Nutritious meals for Orphans",
+        "description": "Delivering balanced and nutritious meals to orphanages, ensuring every child gets the nourishment they need to grow and thrive.",
+        "amount": 1200
+    },
+    {
+        "id": 5,
+        "category": "Education",
+        "image": "Education.png",
+        "title": "Books for Rural Schools",
+        "description": "Empowering the future of our nation by providing books and educational materials to schools in rural areas.",
+        "amount": 1000
+        
+    },
+    {
+        "id": 6,
+        "category": "Health",
+        "image":"Health.png",
+        "title": "Clean water for Children",
+        "description": "Providing access to clean and safe drinking water for underprivileged children in various parts of the world.",
+        "amount": 1500
+        
+    },
+    {
+        "id": 7,
+        "category": "Food",
+        "image": "Food.png",
+        "title": "Nutritious meals for Orphans",
+        "description": "Delivering balanced and nutritious meals to orphanages, ensuring every child gets the nourishment they need to grow and thrive.",
+        "amount": 1200
+       
+    },
+    {
+        "id": 8,
+        "category": "Clothing",
+        "image": "Clothing.png",
+        "title": "Warm clothes for Winter",
+        "description": "Distributing warm clothing to the needy to protect them from the harsh cold of winter, ensuring they remain healthy and safe.",
+        "amount": 750
+      
+    },
+    {
+        "id": 9,
+        "category": "Clothing",
+        "image": "Clothing.png",
+        "title": "Warm clothes for Winter",
+        "description": "Distributing warm clothing to the needy to protect them from the harsh cold of winter, ensuring they remain healthy and safe.",
+        "amount": 750
+       
+    },
+    {
+        "id": 10,
+        "category": "Education",
+        "image": "Education.png",
+        "title": "Books for Rural Schools",
+        "description": "Empowering the future of our nation by providing books and educational materials to schools in rural areas.",
+        "amount": 1000
+    },
+    {
+        "id": 11,
+        "category": "Health",
+        "image":"Health.png",
+        "title": "Clean water for Children",
+        "description": "Providing access to clean and safe drinking water for underprivileged children in various parts of the world.",
+        "amount": 1500
+    },
+    {
+        "id": 12,
+        "category": "Food",
+        "image": "Food.png",
+        "title": "Nutritious meals for Orphans",
+        "description": "Delivering balanced and nutritious meals to orphanages, ensuring every child gets the nourishment they need to grow and thrive.",
+        "amount": 1200
+    }
+    
+]

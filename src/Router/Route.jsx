@@ -2,6 +2,8 @@ import { Outlet, createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
+import Donation from "../Pages/Donation/Donation";
+import Statistics from "../Pages/Statistics/Statistics";
 
 
 
@@ -14,22 +16,17 @@ const myCreatedRoute =  createBrowserRouter([
         children : [
             {
                 path : "/",
-                element: <Home></Home>
-        //         loader : ()=> fetch('/phones.json')
+                element: <Home></Home>,
+                loader: ()=> fetch('../../public/donation.json')
             },
-        //     {
-        //         path : "/favorites",
-        //         element : <Favorites></Favorites>
-        //     },
-        //     {
-        //         path : "/login",
-        //         element : <Login></Login>
-        //     },
-        //     {
-        //         path : "/phones/:id",
-        //         element : <Phone></Phone>,
-        //         loader:()=>fetch('/phones.json')
-        //     }
+            {
+                path : "/donations",
+                element : <Donation></Donation>
+            },
+            {
+                path : "/statistics",
+                element : <Statistics></Statistics>
+            },
         ]
 
     }
