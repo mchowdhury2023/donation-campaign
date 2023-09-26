@@ -4,6 +4,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Donation from "../Pages/Donation/Donation";
 import Statistics from "../Pages/Statistics/Statistics";
+import DonationDetails from "../components/DonationDetails/DonationDetails";
 
 
 
@@ -21,13 +22,20 @@ const myCreatedRoute =  createBrowserRouter([
             },
             {
                 path : "/donations",
-                element : <Donation></Donation>
+                element : <Donation></Donation>,
+                loader: ()=> fetch('../../public/donation.json')
             },
             {
                 path : "/statistics",
                 element : <Statistics></Statistics>
             },
+            {
+                path : "/donation-details/:id",
+                element : <DonationDetails></DonationDetails>,
+                loader: ()=> fetch('../../public/donation.json')
+            },
         ]
+        
 
     }
 ])
