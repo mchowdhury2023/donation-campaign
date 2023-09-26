@@ -7,6 +7,8 @@ const DonationCategory = ({ donationCategory }) => {
         bgColor, categoryTextColor, categoryBoxBgColor, categoryBoxWidth
     } = donationCategory;
 
+    console.log(categoryBoxBgColor);
+
     return (
         <Link to={`/donation-details/${id}`}>
         <div className="card shadow-xl flex flex-col m-4 rounded">

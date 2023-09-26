@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Banner from '../../components/Header/Banner/Banner'
 import DonationCategories from '../../components/DonationCategories/DonationCategories'
 import { useLoaderData } from 'react-router-dom'
 
 const Home = () => {
-  const donationCategories = useLoaderData();
-  console.log(donationCategories);
+  const [donationCategories, setDonationCategories] = useState([]);
+  const loaderData = useLoaderData();
+
+  useEffect(() => {
+      setDonationCategories(loaderData);
+  }, []);
 
   return (
-    <div>
-      <Banner></Banner>
-      <DonationCategories donationCategories={donationCategories}></DonationCategories>
-    </div>
-  )
+      <div>
+          <Banner />
+          <DonationCategories donationCategories={donationCategories} />
+      </div>
+  );
 }
 
-export default Home
+export default Home;

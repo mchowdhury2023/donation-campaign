@@ -2,6 +2,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import {addCardToLocalStorage, cardExistsInLocalStorage } from '../../Utility/localStorageUtils';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const DonationDetails = () => {
@@ -39,6 +40,7 @@ const DonationDetails = () => {
             <p>{donation.description}</p>
           </div>
         </div>
+        
       </div>
     );
   };

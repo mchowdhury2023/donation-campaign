@@ -3,7 +3,6 @@ import { getCardsFromLocalStorage } from '../../Utility/localStorageUtils';
 import { Link } from 'react-router-dom';
 
 const Donation = () => {
-  
   const [showAll, setShowAll] = useState(false);
   const cards = getCardsFromLocalStorage();
 
@@ -13,11 +12,8 @@ const Donation = () => {
     <div>
       <h2 className="text-2xl mb-6 text-center">List of Donations</h2>
       <div className="grid grid-cols-2 gap-4">
-        {visibleCards.map((card) => {
-          const buttonBgColor = card.categoryTextColor.replace('text', 'bg');
-          console.log()
-    
-        return (
+        {visibleCards.map((card) => 
+        (
           <Link to={`/donation-details/${card.id}`} key={card.id}>
             <div className={`card card-side shadow-xl ${card.bgColor} h-full`}>
               <figure className="h-full w-1/2">
@@ -29,14 +25,13 @@ const Donation = () => {
                 </div>
                 <h3 className={`text-lg font-semibold mb-2 ${card.categoryTextColor}`}>{card.title}</h3>
                 <p className="mb-4">Amount: ${card.amount}</p>
-                <div className='justify-start'>
-                  <button className={`btn ${buttonBgColor} text-white`}>Show Details</button>
-                  </div>
+                <div className="card-actions justify-start">
+                  <button className={`btn ${card.categoryBoxBgColor} text-white`}>Show Details</button>
+                </div>
               </div>
             </div>
           </Link>
-        );
-        })}
+        ))}
       </div>
       
 
