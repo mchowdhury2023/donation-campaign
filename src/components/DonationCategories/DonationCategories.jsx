@@ -3,7 +3,7 @@ import DonationCategory from '../DonationCategory/DonationCategory'
 
 const DonationCategories = ({donationCategories}) => {
 
-    console.log(donationCategories)
+   // console.log(donationCategories)
   return (
     <div>
         {/* <h2 className='text-2xl text-center'>Donation Categories</h2> */}

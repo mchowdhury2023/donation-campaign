@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex justify-between items-center py-6">
-        <img src={Logo} alt="" className="w-16" />
+        <img src={Logo} alt="" className="w-36" />
 
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-5">

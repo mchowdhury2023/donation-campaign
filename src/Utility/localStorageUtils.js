@@ -11,7 +11,10 @@ export const addCardToLocalStorage = (card) => {
   };
   
   export const cardExistsInLocalStorage = (id) => {
+
     const cards = JSON.parse(localStorage.getItem("donatedCards") || "[]");
-    return cards.some((c) => c.id === id);
-  };
+  
+  const exists = cards.some((c) => c.id === Number(id));
+  return exists;
+};
   

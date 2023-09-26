@@ -7,7 +7,7 @@ const DonationCategory = ({ donationCategory }) => {
         bgColor, categoryTextColor, categoryBoxBgColor, categoryBoxWidth
     } = donationCategory;
 
-    console.log(categoryBoxBgColor);
+    // console.log(categoryBoxBgColor);
 
     return (
         <Link to={`/donation-details/${id}`}>

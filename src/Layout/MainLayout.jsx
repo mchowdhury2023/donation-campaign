@@ -9,7 +9,10 @@ const MainLayout = () => {
         <div>
            <Navbar></Navbar>
         </div>
-        <Outlet></Outlet>
+        <div className='py-10'>
+            <Outlet></Outlet>
+        </div>
+       
     </div>
   )
 }

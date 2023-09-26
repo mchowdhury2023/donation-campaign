@@ -3,12 +3,23 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import {addCardToLocalStorage, cardExistsInLocalStorage } from '../../Utility/localStorageUtils';
 import { ToastContainer, toast } from 'react-toastify';
+import { useEffect, useState } from 'react';
 
 
 const DonationDetails = () => {
+
+    const [donation, setDonation] = useState();
     const { id } = useParams();
     const donationData = useLoaderData();
-    const donation = donationData.find((d) => d.id === parseInt(id));
+
+    useEffect(() => {
+
+      const donationCard = donationData?.find((donation) => donation.id === parseInt(id));
+      setDonation(donationCard);
+
+    },[id, donationData])
+    
+    
   
     if (!donation) return <div>Donation not found!</div>;
 
@@ -32,7 +43,7 @@ const DonationDetails = () => {
               className="w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black bg-opacity-60"></div>
-            <button onClick={handleDonate} className="absolute bottom-4 left-4 bg-black bg-opacity-75 text-white p-2 rounded">
+            <button onClick={handleDonate} className={`absolute bottom-4 left-4 ${donation.categoryBoxBgColor} bg-opacity-75 text-white p-2 rounded`}>
               Donate ${donation.amount}
             </button>
           </div>
@@ -40,6 +51,7 @@ const DonationDetails = () => {
             <p>{donation.description}</p>
           </div>
         </div>
+        <ToastContainer></ToastContainer>
         
       </div>
     );
