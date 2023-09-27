@@ -43,12 +43,12 @@ const DonationDetails = () => {
               className="w-full"
             />
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black bg-opacity-60"></div>
-            <button onClick={handleDonate} className={`absolute bottom-4 left-4 ${donation.categoryBoxBgColor} bg-opacity-75 text-white p-2 rounded`}>
+            <button onClick={handleDonate} style={{backgroundColor: donation.categoryTextColor }} className="absolute bottom-4 left-4 bg-opacity-75 text-white p-2 rounded">
               Donate ${donation.amount}
             </button>
           </div>
           <div className="mt-6">
-          <h3 className={`text-lg font-semibold mb-2 ${donation.categoryTextColor}`}>{donation.title}</h3>
+          <h3 style={{color: donation.categoryTextColor}} className="text-lg font-semibold mb-2">{donation.title}</h3>
             <p>{donation.description}</p>
           </div>
         </div>

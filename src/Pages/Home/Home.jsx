@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
       setDonationCategories(loaderData);
       setFilteredCategories(loaderData);
-  }, [loaderData]);
+  }, []);
 
   const handleSearch = (searchTerm) => {
     if (searchTerm) {
