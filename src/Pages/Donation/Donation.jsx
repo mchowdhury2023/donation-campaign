@@ -10,7 +10,6 @@ const Donation = () => {
 
   return (
     <div>
-      <h2 className="text-2xl mb-6 text-center">List of Donations</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-4">
         {visibleCards.map((card) => 
         (
@@ -35,7 +34,7 @@ const Donation = () => {
       </div>
       
 
-      {cards.length >= 4 && !showAll && (
+      {cards.length > 4 && !showAll && (
         <div className="mt-4 text-center">
           <button onClick={() => setShowAll(true)} className="btn btn-primary">Show All</button>
         </div>

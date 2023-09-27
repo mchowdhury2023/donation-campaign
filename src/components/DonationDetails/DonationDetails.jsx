@@ -35,7 +35,7 @@ const DonationDetails = () => {
     return (
       <div className="flex justify-center items-start min-h-screen bg-gray-100 pt-16">
         <div className="bg-white p-8 rounded-lg shadow-md w-1/2">
-          <h3 className="text-2xl mb-6 text-center">Donation Details</h3>
+          
           <div className="relative">
             <img
               src={`/${donation.image}`}
@@ -48,6 +48,7 @@ const DonationDetails = () => {
             </button>
           </div>
           <div className="mt-6">
+          <h3 className={`text-lg font-semibold mb-2 ${donation.categoryTextColor}`}>{donation.title}</h3>
             <p>{donation.description}</p>
           </div>
         </div>
