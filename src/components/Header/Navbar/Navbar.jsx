@@ -16,6 +16,7 @@ const Navbar = () => {
             <NavLink
               to="/" 
               className={({ isActive }) => isActive ? "text-red-400 underline" : ""}
+              onClick={() => window.location.href = "/"}
             >
               Home
             </NavLink>
@@ -55,7 +56,11 @@ const Navbar = () => {
           <NavLink
             to="/" 
             className={({ isActive }) => isActive ? "text-red-400 underline" : ""}
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMobileMenuOpen(false);
+              window.location.href = "/";
+            }}
           >
             Home
           </NavLink>

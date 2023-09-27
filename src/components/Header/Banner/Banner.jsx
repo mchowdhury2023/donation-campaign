@@ -6,6 +6,7 @@ const Banner = ({ onSearch }) => {
 
   const handleSearchClick = () => {
     onSearch(searchTerm);
+    setSearchTerm('');
   };
 
   return (
